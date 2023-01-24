@@ -1,4 +1,5 @@
 import AppRoutes from "../../routes";
+
 function PageContent() {
   return (
     <div className="pageContent">

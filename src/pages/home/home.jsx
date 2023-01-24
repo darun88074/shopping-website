@@ -1,13 +1,13 @@
-import Products from "../../components/products";
+import ProductsCard from "../../components/card";
 
-function Category() {
+function Home() {
   return (
     <div>
       <div>
         <img src={require('../../assets/img/banner.jpg')} alt="home-banner" className="banner-height w-100" />
       </div>
-      <Products />
+      <ProductsCard />
     </div>
   );
 }
-export default Category;
+export default Home;

@@ -1,42 +1,12 @@
-import { Button, Col, Image, Input, Row, Typography } from "antd";
+import { Button, Col, Input, Row } from "antd";
+import { CardFooter } from "./components/footer-card";
 
 function AppFooter() {
   return (
     <>
-      <Row className="secure-payment">
-        <Col xs={24} md={12} lg={12} xl={6} >
-          <div className="card-footer">
-            <img className="card-f-img" src={require('../../assets/img/shield.png')} alt="shield" />
-            <div className="top-heading">100% Secure Payments</div>
-            <p className="subText mt12">Moving your card details to a much more </p>
-            <p className="subText">secured place</p>
-          </div>
-        </Col>
-        <Col xs={24} md={12} lg={12} xl={6} >
-          <div className="card-footer">
-            <img className="card-f-img" src={require('../../assets/img/money.png')} alt="money" />
-            <div className="top-heading">TrustPay</div>
-            <p className="subText mt12">100% Payment Protection. Easy</p>
-            <p className="subText">Return Policy </p>
-          </div>
-        </Col>
-        <Col xs={24} md={12} lg={12} xl={6} >
-          <div className="card-footer">
-            <img className="card-f-img" src={require('../../assets/img/help-desk.png')} alt="help-desk" />
-            <div className="top-heading">Help Center</div>
-            <p className="subText mt12">Got a question? Look no further.</p>
-            <p className="subText">Browse our FAQs or submit your query here.</p>
-          </div>
-        </Col>
-        <Col xs={24} md={12} lg={12} xl={6} >
-          <div className="card-footer">
-            <img className="card-f-img" src={require('../../assets/img/smartphone.png')} alt="smartphone" />
-            <div className="top-heading">Shop on the Go</div>
-            <p className="subText mt12">Download the app and get exciting </p>
-            <p className="subText">secured place</p>
-          </div>
-        </Col>
-      </Row>
+      <div>
+        <CardFooter />
+      </div>
 
       <div className="appFooter">
         <Row className="secure-payment">
@@ -136,4 +106,6 @@ function AppFooter() {
     </>
   );
 }
+
+
 export default AppFooter;

@@ -11,9 +11,9 @@ import {
 } from "antd";
 import { useEffect, useState } from "react";
 import { addToCart, getAllProducts, getProductsByCategory } from "../../api";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
-function Products() {
+function ProductCard() {
   const [loading, setLoading] = useState(false);
   const param = useParams();
   const [items, setItems] = useState([]);
@@ -149,7 +149,7 @@ function Products() {
                     <Typography.Paragraph>
                       Rs: {product.price}{" "}
                       <Typography.Text delete type="danger">
-                        
+
                         {parseFloat(
                           product.price +
                           (product.price * product.discountPercentage) / 100
@@ -196,4 +196,4 @@ function AddToCartButton({ item }) {
     </Button>
   );
 }
-export default Products;
+export default ProductCard;

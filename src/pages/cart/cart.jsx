@@ -1,28 +1,20 @@
-import { HomeFilled, ShoppingCartOutlined, UserOutlined } from "@ant-design/icons";
 import {
-    Badge,
     Button,
     Checkbox,
     Drawer,
     Form,
     Input,
     InputNumber,
-    Menu,
     message,
-    Space,
     Table,
     Typography,
-    Image,
-    Row,
-    Col
 } from "antd";
 import { useEffect, useState } from "react";
 import { getCart } from "../../api";
-// import './index.scss';
 
 function CartPage() {
     const [cartItems, setCartItems] = useState([]);
-    const [cartDrawerOpen, setCartDrawerOpen] = useState(false);
+    const [, setCartDrawerOpen] = useState(false);
     const [checkoutDrawerOpen, setCheckoutDrawerOpen] = useState(false);
     useEffect(() => {
         getCart().then((res) => {
@@ -101,8 +93,6 @@ function CartPage() {
                 />
             </div>
             {/* checkout popup start */}
-
-
             <Drawer
                 open={checkoutDrawerOpen}
                 onClose={() => {
