@@ -1,0 +1,167 @@
+.appHeader {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 2px 2px #00000033;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    background: #fff;
+    padding: 0px 30px;
+}
+
+.soppingCartIcon {
+    font-size: 25px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.productsContainer {
+    padding: 15px 60px;
+}
+
+.appMenu {
+    width: 500px;
+    border: none;
+}
+
+.pageContent {
+    display: flex;
+    flex: 1;
+    overflow-y: auto;
+    margin-top: 2px;
+}
+
+
+.appFooter {
+    padding: 30px 30px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.itemCard,
+.itemCardBadge {
+    margin: 8px;
+}
+
+.itemCardImage {
+    height: 150px !important;
+    object-fit: scale-down;
+}
+
+.sort-sections {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 8px;
+}
+
+.fs-20 {
+    font-size: 16px;
+}
+
+.login-user {
+    border-left: 1px solid #ddd;
+    padding-left: 20px;
+}
+
+.secure-payment {
+    padding: 30px;
+}
+
+.top-heading {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.card-footer {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    padding: 15px;
+}
+
+.secure-payment .ant-col {
+    padding: 4px;
+}
+
+.middle-content span {
+    color: #a5a5a5 !important;
+}
+
+.middle-heading {
+    color: #344c55;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    padding-left: 15px;
+}
+
+.copyrights {
+    padding: 9px 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #344c55;
+}
+
+.pe-2 {
+    padding-right: 8px;
+}
+
+.cart-page {
+    padding: 0px 30px;
+}
+
+.ant-table-wrapper {
+    width: 100%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.cart-sections {
+    padding: 20px 0px;
+}
+
+.cart-heading {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.total-text {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: end;
+    padding: 15px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.gap-2 {
+    gap: 10px;
+}
+
+.header-up {
+    background: #e40046;
+    color: #d8d8d8;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 30px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.ant-menu .ant-menu-title-content {
+    transition: color 0.3s;
+    text-transform: uppercase;
+    font-weight: 500;
+}
