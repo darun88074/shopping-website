@@ -108,7 +108,7 @@ function Products() {
             <Badge.Ribbon
               className="itemCardBadge"
               text={`${product.discountPercentage}% Off`}
-              color="pink"
+              color="green"
             >
               <Card
                 className="itemCard"

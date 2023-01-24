@@ -5,6 +5,7 @@ import {
   Checkbox,
   Drawer,
   Form,
+  Image,
   Input,
   InputNumber,
   Menu,
@@ -16,6 +17,7 @@ import {
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { getCart } from "../../api";
+import Logo from '../../assets/img/logo.png'
 const { Search } = Input;
 function AppHeader() {
   const navigate = useNavigate();
@@ -35,6 +37,9 @@ function AppHeader() {
         </div>
       </div>
       <div className="appHeader">
+        <div>
+          <img src={require('../../assets/img/logo.png')} alt="logo" className="logo-height" />
+        </div>
         <Menu
           className="appMenu"
           onClick={onMenuClick}
@@ -107,7 +112,7 @@ function AppHeader() {
             <AppCart />
           </div>
           <div className="fs-20 login-user">
-            <UserOutlined /> Arunkumar Dhayalan
+            <UserOutlined className="login-user-img" /> Arunkumar Dhayalan
           </div>
         </Space>
       </div>

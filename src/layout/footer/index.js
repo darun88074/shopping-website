@@ -4,32 +4,34 @@ function AppFooter() {
   return (
     <>
       <Row className="secure-payment">
-        <Col xs={6} lg={6} md={6}>
+        <Col xs={24} md={12} lg={12} xl={6} >
           <div className="card-footer">
-            {/* <Image src="../assets/img/help-desk.png"></Image>
-            <img src="../assets/img/help-desk.png" alt="help-desk"/> */}
-            <p className="top-heading">100% Secure Payments</p>
+            <img className="card-f-img" src={require('../../assets/img/shield.png')} alt="shield" />
+            <div className="top-heading">100% Secure Payments</div>
             <p className="subText mt12">Moving your card details to a much more </p>
             <p className="subText">secured place</p>
           </div>
         </Col>
-        <Col xs={6} lg={6} md={6}>
+        <Col xs={24} md={12} lg={12} xl={6} >
           <div className="card-footer">
-            <p className="top-heading">TrustPay</p>
+            <img className="card-f-img" src={require('../../assets/img/money.png')} alt="money" />
+            <div className="top-heading">TrustPay</div>
             <p className="subText mt12">100% Payment Protection. Easy</p>
             <p className="subText">Return Policy </p>
           </div>
         </Col>
-        <Col xs={6} lg={6} md={6}>
+        <Col xs={24} md={12} lg={12} xl={6} >
           <div className="card-footer">
-            <p className="top-heading">Help Center</p>
+            <img className="card-f-img" src={require('../../assets/img/help-desk.png')} alt="help-desk" />
+            <div className="top-heading">Help Center</div>
             <p className="subText mt12">Got a question? Look no further.</p>
             <p className="subText">Browse our FAQs or submit your query here.</p>
           </div>
         </Col>
-        <Col xs={6} lg={6} md={6}>
+        <Col xs={24} md={12} lg={12} xl={6} >
           <div className="card-footer">
-            <p className="top-heading">Shop on the Go</p>
+            <img className="card-f-img" src={require('../../assets/img/smartphone.png')} alt="smartphone" />
+            <div className="top-heading">Shop on the Go</div>
             <p className="subText mt12">Download the app and get exciting </p>
             <p className="subText">secured place</p>
           </div>
@@ -38,10 +40,10 @@ function AppFooter() {
 
       <div className="appFooter">
         <Row className="secure-payment">
-          <Col xs={6} lg={6} md={6}>
+          <Col xs={24} md={12} lg={12} xl={6} >
             <div >
               <p className="middle-heading">Policy Info</p>
-              <ul class="middle-content">
+              <ul className="middle-content">
                 <li>
                   <span >
                     Privacy Policy
@@ -62,10 +64,10 @@ function AppFooter() {
               </ul>
             </div>
           </Col>
-          <Col xs={6} lg={6} md={6}>
+          <Col xs={24} md={12} lg={12} xl={6} >
             <div >
               <p className="middle-heading">COMPANY</p>
-              <ul class="middle-content">
+              <ul className="middle-content">
                 <li>
                   <span >
                     Impact@COMPANY
@@ -87,10 +89,10 @@ function AppFooter() {
             </div>
           </Col>
 
-          <Col xs={6} lg={6} md={6}>
+          <Col xs={24} md={12} lg={12} xl={6} >
             <div >
               <p className="middle-heading">POPULAR LINKS</p>
-              <ul class="middle-content">
+              <ul className="middle-content">
                 <li>
                   <span >
                     Lehenga
@@ -108,7 +110,7 @@ function AppFooter() {
               </ul>
             </div>
           </Col>
-          <Col xs={6} lg={6} md={6}>
+          <Col xs={24} md={12} lg={12} xl={6} >
             <div>
               <p className="middle-heading">SUBSCRIBE</p>
               <p>
@@ -128,7 +130,7 @@ function AppFooter() {
           </Col>
         </Row>
       </div>
-      <div class="copyrights">
+      <div className="copyrights">
         Copyright © 2021, COMPANY Limited. All Rights Reserved
       </div>
     </>
