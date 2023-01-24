@@ -59,9 +59,21 @@ function Products() {
   };
   const navigate = useNavigate();
 
-  const navigateToDetail = () => {
-    navigate("/product-detail");
+  const navigateToDetail = (id, discountPercentage, thumbnail, rating, description, product, title, price) => {
+    navigate("/product-detail", {
+      state: {
+        id: id,
+        discountPercentage: discountPercentage,
+        thumbnail: thumbnail,
+        rating: rating,
+        product: product,
+        description: description,
+        title: title,
+        price: price
+      }
+    });
   }
+
   return (
     <div className="productsContainer">
       <div className="sort-sections">
@@ -114,7 +126,16 @@ function Products() {
                 className="itemCard"
                 title={product.title}
                 key={index}
-                onClick={navigateToDetail}
+                onClick={() => navigateToDetail(
+                  product.id,
+                  product.discountPercentage,
+                  product.thumbnail,
+                  product.rating,
+                  product,
+                  product.description,
+                  product.title,
+                  product.price
+                )}
                 cover={
                   <Image className="itemCardImage" src={product.thumbnail} />
                 }
@@ -126,9 +147,9 @@ function Products() {
                 <Card.Meta
                   title={
                     <Typography.Paragraph>
-                      Price: ${product.price}{" "}
+                      Rs: {product.price}{" "}
                       <Typography.Text delete type="danger">
-                        $
+                        
                         {parseFloat(
                           product.price +
                           (product.price * product.discountPercentage) / 100

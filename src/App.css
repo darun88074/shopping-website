@@ -174,24 +174,155 @@ ul.middle-content li {
 
 .logo-height {
     height: 80px;
+    display: flex;
 }
-.login-user-img{
+
+.login-user-img {
     border: 1px solid #ddd;
     padding: 8px;
     border-radius: 50%;
     margin-right: 3px;
     box-shadow: 1px 1px 5px #ddd;
 }
-.card-f-img{
+
+.card-f-img {
     font-size: 50px;
 }
 
+.ant-card:hover {
+    box-shadow: 0px 0px 6px 2px #f3f0f0;
+}
+
+.details-page,
+.cart-page {
+    padding: 15px 30px;
+    background: #eee;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+.detail-page-content,
+.cart-sections {
+    background: #fff;
+    box-shadow: 0px 3px 3px #ddd;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.bg-white {
+    background: #fff;
+}
+
+.add-to-cart {
+    border-color: #333;
+    background: #333;
+    font-size: 15px;
+    height: 50px;
+    border-radius: none !important;
+}
+
+.buy-now-cart {
+    border-color: #e40046;
+    background: #e40046;
+    font-size: 15px;
+    height: 50px;
+    color: #fff;
+    border-radius: none !important;
+}
+
+.detail-head {
+    color: #333333;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-height: 27px;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.detail-mrp {
+    color: #bbbbbb;
+    font-size: 13px;
+    line-height: 15px;
+    margin-bottom: 3px;
+    display: inline-block;
+}
+
+.detail-mrpcut {
+    color: #bbbbbb;
+    font-size: 13px;
+    text-decoration: line-through;
+    line-height: 15px;
+    margin-bottom: 3px;
+}
+
+.detail-discount {
+    border-radius: 2px;
+    border: solid 1px #ccc;
+    color: #999;
+    font-size: 12px;
+    padding: 2px 6px;
+    vertical-align: 11px;
+    margin: 0 5px;
+}
+
+.detail-final-price {
+    font-size: 23px;
+    color: #ff2341;
+}
+
+.detail-img-sec {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.detailview-col1 {
+    overflow: hidden;
+    width: 100%;
+}
+
+.p-15 {
+    padding: 15px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.gap-8px {
+    gap: 8px;
+}
+
+.color-sec {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
 
 @media screen and (max-width: 1250px) {
     .appMenu {
         width: 300px;
     }
-    .ant-input-search{
+
+    .ant-input-search {
         width: 200px !important;
     }
 }

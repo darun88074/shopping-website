@@ -39,7 +39,14 @@ function CartPage() {
     return (
         <div className="cart-page w-100">
             <div className="cart-sections">
-            <div className="cart-heading">Shopping Cart</div>
+                <div className="d-flex align-items-center justify-content-between mb-15">
+                    <div className="cart-heading">Shopping Cart</div>
+                    <div>
+                        <Button onClick={() => {
+                            setCheckoutDrawerOpen(true);
+                        }} size='large' type='secondary' className='buy-now-cart'> Checkout Your Cart</Button>
+                    </div>
+                </div>
                 <Table
                     pagination={false}
                     columns={[
@@ -94,14 +101,8 @@ function CartPage() {
                 />
             </div>
             {/* checkout popup start */}
-            <Button
-                onClick={() => {
-                    setCheckoutDrawerOpen(true);
-                }}
-                type="primary"
-            >
-                Checkout Your Cart
-            </Button>
+
+
             <Drawer
                 open={checkoutDrawerOpen}
                 onClose={() => {
